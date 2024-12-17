@@ -1,0 +1,21 @@
+
+ /* div p{
+    color: red;
+} */
+
+ /* li:nth-of-type(1){
+    color: red;
+} */
+
+div{
+    background-color: aquamarine;
+    height: 100px;
+    width: 100px;
+}
+div:hover{
+    background-color: red;
+    border-radius: 50%;
+    transition: 3s;
+}
+
+

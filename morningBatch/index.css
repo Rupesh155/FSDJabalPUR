@@ -1,0 +1,65 @@
+/* h3{
+color: aquamarine;
+} */
+
+/* .one{
+    color: aquamarine;
+} */
+
+/* #two{
+    color: red;
+} */
+/* a[href^='https']{
+    color: green;
+
+} */
+/* a[href$='in']{
+    color: green;
+
+} */
+/* a[href*='g']{
+    color: green;
+
+}
+ div  p{
+    color: red;
+} */
+ /* li:nth-of-type(1){
+    color: red;
+ } */
+
+
+
+/* 
+  div{
+    background-color: red;
+    height: 300px;
+    width: 300px;
+    transition: 3s;
+  }
+  div:hover{
+    background-color: purple;
+    border-radius: 50%;
+  } */
+   /* h3{
+    color: crimson;
+   } */
+
+    /* #one{
+        color: red;
+    } */
+     /* .two{
+        background-color: red;
+     } */
+      div{
+        background-color: red;
+        height: 100px;
+        width: 100px;
+     
+      }
+      div:hover{
+        background-color: green;
+        border-radius: 50%;
+        transition: 5s;
+
+      }
