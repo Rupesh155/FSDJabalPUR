@@ -1,0 +1,31 @@
+#parent{
+    height: 200px;
+    width: 151px;
+    position: relative;
+    border-radius: 11px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+}
+  .div-a {
+    height: 50%; 
+    width: 100%; 
+
+
+}
+.div-b  {
+    height: 35%;
+    width: 60%;
+
+    border-radius: 50%;
+    position: absolute;
+    bottom: 80px;
+    left: 30px;
+}
+.div-b img{
+    border-radius: 50%;
+}
+img{
+    height: 100%;
+    width: 100%;
+}

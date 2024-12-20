@@ -1,0 +1,34 @@
+#main{
+    /* border: 2px solid ; */
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    /* justify-content: baseline; */
+    /* justify-content: center; */
+    /* justify-content: end; */
+    /* justify-content: space-around; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background-color: red; */
+    /* justify-content: space-evenly; */
+
+}
+#main div{
+    height: 100px;
+    width: 100px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+#one{
+    background-color: orange;
+}
+#two{
+    background-color: snow;
+}
+#three{
+    background-color:  green;
+}

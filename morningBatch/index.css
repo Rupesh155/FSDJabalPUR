@@ -1,65 +1,60 @@
-/* h3{
-color: aquamarine;
-} */
+/* #main{
+  border: 2px solid ;
+  height: 400px; */
+  /* display: flex; */
+  /* justify-content: baseline; */
+  /* justify-content: center; */
+/* justify-content: end; */
+/* justify-content: space-around; */
 
-/* .one{
-    color: aquamarine;
+/* justify-content: space-between; */
+/* justify-content: space-evenly; */
+/* flex-wrap: wrap; */
+  /* flex-direction: row; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-direction: column-reverse; */
+/* } */
+
+/* #main div {
+  height: 100px;
+  width: 100px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+} */
+ /* 96966-15000+5000+2846 */
+
+/* #one{
+  background-color: orange;
 } */
 
 /* #two{
-    color: red;
+  background-color: snow;
 } */
-/* a[href^='https']{
-    color: green;
 
+/* #three{
+  background-color: green;
 } */
-/* a[href$='in']{
-    color: green;
 
-} */
-/* a[href*='g']{
-    color: green;
-
+*{
+  margin: 0;
+  padding: 0;
 }
- div  p{
-    color: red;
-} */
- /* li:nth-of-type(1){
-    color: red;
- } */
-
-
-
-/* 
-  div{
-    background-color: red;
-    height: 300px;
-    width: 300px;
-    transition: 3s;
-  }
-  div:hover{
-    background-color: purple;
-    border-radius: 50%;
-  } */
-   /* h3{
-    color: crimson;
-   } */
-
-    /* #one{
-        color: red;
-    } */
-     /* .two{
-        background-color: red;
-     } */
-      div{
-        background-color: red;
-        height: 100px;
-        width: 100px;
-     
-      }
-      div:hover{
-        background-color: green;
-        border-radius: 50%;
-        transition: 5s;
-
-      }
+#main{
+  background-color: black;
+  height: 60px;
+display: flex;
+justify-content: space-between;
+/* align-items: center; */
+}
+#home{
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: red; */
+  width: 300px;
+}
+h3{
+  color: snow;
+}
+p{
+color: snow;
+}
