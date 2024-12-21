@@ -3,26 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="index.css">
+  <title>Flexbox Product Grid</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: calc(33.33% - 20px); /* 3 cards in a row */
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .product-card p {
+      font-size: 1rem;
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    .product-card button {
+      background-color: #ff9900;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    .product-card button:hover {
+      background-color: #cc7a00;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 768px) {
+      .product-card {
+        width: calc(50% - 20px); /* 2 cards in a row for smaller screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .product-card {
+        width: 100%; /* 1 card in a row for mobile screens */
+      }
+    }
+  </style>
 </head>
 <body>
-  <div id="main">
-    <div>
-      <h3>Coding NinjaBlock</h3>
-    </div>
-    <div id="home">
-      <p> Home</p>
-      <p> Home</p>
-      <p> Home</p>
-      <p> Home</p>
 
+  <h1 style="text-align: center; margin-bottom: 20px;">Our Products</h1>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/150" alt="Product 1">
+      <h3>Product 1</h3>
+      <p>$20.00</p>
+      <button>Buy Now</button>
     </div>
-    <div>
-      <button>Login</button>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/150" alt="Product 2">
+      <h3>Product 2</h3>
+      <p>$25.00</p>
+      <button>Buy Now</button>
     </div>
-
-
+    <div class="product-card">
+      <img src="https://via.placeholder.com/150" alt="Product 3">
+      <h3>Product 3</h3>
+      <p>$30.00</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/150" alt="Product 4">
+      <h3>Product 4</h3>
+      <p>$15.00</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/150" alt="Product 5">
+      <h3>Product 5</h3>
+      <p>$18.00</p>
+      <button>Buy Now</button>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/150" alt="Product 6">
+      <h3>Product 6</h3>
+      <p>$22.00</p>
+      <button>Buy Now</button>
+    </div>
   </div>
+
 </body>
 </html>

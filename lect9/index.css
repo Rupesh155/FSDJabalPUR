@@ -1,0 +1,47 @@
+/* div{
+    height: 300px;
+    width: 300px;
+    background-color: blueviolet;
+    transition: 3s;
+    transition-property:  background-color;
+}
+
+div:hover{
+    background-color: yellow;
+    border-radius: 50%;
+    
+} */
+
+#main{
+    height: 400px;
+    border: 2px solid ;
+}
+#main:hover div{
+    margin-left: 1220px;
+    border-radius: 50%;
+    /* width: 100vw; */
+}
+#main div {
+    height: 100px;
+    width: 100px;
+    transition: 3s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#main div:nth-of-type(1){
+    background-color:   black;
+    transition-timing-function: linear;
+}
+#main div:nth-of-type(2){
+    background-color: goldenrod;
+    transition-timing-function: ease-in;
+}
+#main div:nth-of-type(3){
+    background-color: royalblue;
+    transition-timing-function: ease-out;
+}
+#main div:nth-of-type(4){
+    background-color:  green;
+    transition-timing-function: ease-in-out;
+}
+
+
