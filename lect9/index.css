@@ -17,9 +17,9 @@ div:hover{
     border: 2px solid ;
 }
 #main:hover div{
-    margin-left: 1220px;
-    border-radius: 50%;
-    /* width: 100vw; */
+    /* margin-left: 1220px; */
+    /* border-radius: 50%; */
+    width: 100vw;
 }
 #main div {
     height: 100px;

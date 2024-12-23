@@ -1,0 +1,50 @@
+
+
+/* h1{ */
+   /* transition: 3s; */
+   /* transition: 2s; */
+
+/* } */
+/* h1:hover{ */
+    /* transform: translateX(300px); */
+    /* transform: translate(300px,200px); */
+    /* transform: scaleY(1.5); */
+    /* transform: rotateY(180deg); */
+
+/* } */
+
+
+
+.wrapper{
+    width: 300px;
+    height: 250px;
+    position: relative;
+    transition: 3s;
+    margin: 50px  auto;
+    transform-style: preserve-3d;
+}
+.wrapper:hover{
+    transform: rotateY(180deg);
+}
+img{
+    width: 100%;
+}
+body{
+    perspective: 900px;
+}
+.side-b{
+    /* background-color: cornflowerblue; */
+    /* z-index: 2; */
+    transform: rotateY(180deg);
+
+}
+.side-a{
+   
+    z-index: 1;
+    backface-visibility: hidden;
+}
+.side-a, .side-b{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

@@ -1,60 +1,7 @@
-/* #main{
-  border: 2px solid ;
-  height: 400px; */
-  /* display: flex; */
-  /* justify-content: baseline; */
-  /* justify-content: center; */
-/* justify-content: end; */
-/* justify-content: space-around; */
 
-/* justify-content: space-between; */
-/* justify-content: space-evenly; */
-/* flex-wrap: wrap; */
-  /* flex-direction: row; */
-  /* flex-direction: row-reverse; */
-  /* flex-direction: column; */
-  /* flex-direction: column-reverse; */
-/* } */
-
-/* #main div {
-  height: 100px;
-  width: 100px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-} */
- /* 96966-15000+5000+2846 */
-
-/* #one{
-  background-color: orange;
-} */
-
-/* #two{
-  background-color: snow;
-} */
-
-/* #three{
-  background-color: green;
-} */
-
-*{
-  margin: 0;
-  padding: 0;
-}
-#main{
-  background-color: black;
-  height: 60px;
-display: flex;
-justify-content: space-between;
-/* align-items: center; */
-}
-#home{
-  display: flex;
-  justify-content: space-evenly;
-  /* background-color: red; */
-  width: 300px;
-}
-h3{
-  color: snow;
-}
-p{
-color: snow;
+h2:hover{
+  transition: 3s;
+  /* transform: translateX(200px); */
+  /* transform: translate(200px,200px); */
+  transform: rotateX(360deg);
 }
