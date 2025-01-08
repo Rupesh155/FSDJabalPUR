@@ -1,7 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-h2:hover{
-  transition: 3s;
-  /* transform: translateX(200px); */
-  /* transform: translate(200px,200px); */
-  transform: rotateX(360deg);
+.parent {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.child {
+  width: 50px;
+  height: 50px;
+  border-top: 5px solid rgb(116, 116, 191);
+  border-right: 5px solid rgb(220, 218, 218);
+  border-bottom: 5px solid rgb(220, 218, 218);
+  border-left: 5px solid rgb(220, 218, 218);
+  border-radius: 50%;
+
+  /* animation */
+  animation-name: loading;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+}
+
+/* 
+@keyframes loading {
+  100% {
+      transform: rotate(360deg);
+  }
+} */
+
+@keyframes loading {
+  0%{
+      transform: translateY(0px) rotate(0deg);
+  }
+  50%{
+      transform: translateY(500px) rotate(180deg);
+  }
+  100%{
+      transform: translateY(0px) rotate(360deg);
+  }
 }

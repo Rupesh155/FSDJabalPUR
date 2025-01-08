@@ -1,81 +1,35 @@
-/* #main{
-    height: 321px;
-    width: 351px;
-    display: flex;
-    justify-content: center;
-    background-color: snow;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border-radius: 11px;
-    transition: 3s;
-
-}
-#main:hover {
-    transform: scale(1.1);
-}
-body{
-    display: flex;
-    gap: 10px;
-    background-color: rgba(239, 168, 232, 0.082);
-}
-body:hover #main{
-    margin-left: 1000px;
-}
-button{
-    border-radius: 11px;
-     border-style:none ;
-     height: 30px;
-     width: 70px;
-     cursor: pointer;
-}
-button:hover{
-    background-color: orange;
-
-}
-#child-a{
-    height: 150px;
-    width: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: gainsboro;
-    border-radius: 11px;
-    margin-top: 10px;
-}
-#child{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
+ .image {
+    width: 300px;
+    height: 200px; 
+    /* background: linear-gradient(red, blue); */
+    /* background: linear-gradient(to right, red, blue); */
+    /* background: linear-gradient(to bottom right, red, yellow, green); */
+    /* background: radial-gradient( red, blue); */
+    /* background: radial-gradient(ellipse, red, yellow, green); */
+    /* background: radial-gradient(circle at top left, red, blue); */
+    /* background: conic-gradient(from 45deg, red, yellow, green, blue); */
+    /* background: conic-gradient(from 0deg at 50% 50%, red, yellow, blue); */
+    /* background: linear-gradient(to right, rgba(255, 0, 0, 0.5), transparent); */
+    /* background: repeating-linear-gradient(to right, red, yellow 10%, green 20%); */
+    /* margin: 48px auto;
+    border: 5px saddlebrown solid;
+    background-repeat: no-repeat;
+    background-size: 20% 30%; 
+    background-position: center; 
+    background-size: cover; */
+     /* background-image: url(https://images.unsplash.com/photo-1736168432643-2d5882e17aeb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);  */
+   } 
 
 
-#main{
-    height: 300px;
-    width: 200px;
-    position: relative;
-    border-radius: 11px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-   
-}
-#child-a{
-    height: 50%;
-    width: 100%;
-}
-#child-b{
-    height: 40%;
-    width: 70%;
-    position: absolute;
-    bottom: 70px;
-    /* position: relative; */
-    /* bottom: 60px; */
-    /* left: 20px; */
-  
-}
-#child-b img {
-    border-radius: 50%;
 
+
+ :root{
+    --bg-color-red: #b79690;
+    --bg-color-yellow: #d7dd33;
+    --font-Size-bada: 36px;
 }
 
-img{
-    height: 100%;
-    width: 100%;
-}
+article , h2 , h3{
+    background-color: var(--bg-color-yellow) ;
+    font-size: var(--font-Size-bada);
+} 
