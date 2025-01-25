@@ -1,36 +1,79 @@
- .image {
-    width: 300px;
-    height: 200px; 
-    /* background: linear-gradient(red, blue); */
-    /* background: linear-gradient(to right, red, blue); */
-    /* background: linear-gradient(to bottom right, red, yellow, green); */
-    /* background: radial-gradient( red, blue); */
-    /* background: radial-gradient(ellipse, red, yellow, green); */
-    /* background: radial-gradient(circle at top left, red, blue); */
-    /* background: conic-gradient(from 45deg, red, yellow, green, blue); */
-    /* background: conic-gradient(from 0deg at 50% 50%, red, yellow, blue); */
-    /* background: linear-gradient(to right, rgba(255, 0, 0, 0.5), transparent); */
-    /* background: repeating-linear-gradient(to right, red, yellow 10%, green 20%); */
-    margin: 48px auto;
-    border: 5px saddlebrown solid;
-    background-repeat: no-repeat;
-    background-size: 20% 30%; 
-    background-position: center; 
-    /* background-size: cover; */
-     background-image: url(https://images.unsplash.com/photo-1736168432643-2d5882e17aeb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); 
-   } 
+/* Linear Gradient - Basic */
+.linear-gradient-basic {
+  background-image: linear-gradient(to right, red, yellow);
+  height: 100vh;
+}
 
+/* Linear Gradient - With Angle */
+.linear-gradient-angle {
+  background-image: linear-gradient(45deg, red, yellow, green);
+  height: 100vh;
+}
 
+/* Linear Gradient - Multiple Colors */
+.linear-gradient-multiple {
+  background-image: linear-gradient(to bottom, red 30%, yellow 50%, green 80%);
+  height: 100vh;
+}
 
+/* Radial Gradient - Basic */
+.radial-gradient-basic {
+  background-image: radial-gradient(circle, red, yellow);
+  height: 100vh;
+}
 
- :root{
-    --bg-color-red: #752f23;
-    --bg-color-yellow: #d7dd33;
-    --font-Size-bada: 36px;
-} 
+/* Radial Gradient - Elliptical */
+.radial-gradient-elliptical {
+  background-image: radial-gradient(ellipse, red, yellow, green);
+  height: 100vh;
+}
 
-article , h2 , h3{
-    /* background-color: var(--bg-color-yellow) ; */
-    /* background-color: red; */
-    font-size: var(--font-Size-bada);
-} 
+/* Radial Gradient - Customized Shape and Size */
+.radial-gradient-custom {
+  background-image: radial-gradient(circle closest-side, red, yellow);
+  height: 100vh;
+}
+
+/* Conic Gradient - Basic */
+.conic-gradient-basic {
+  background-image: conic-gradient(red, yellow, green);
+  height: 100vh;
+}
+
+/* Conic Gradient - With Angle */
+.conic-gradient-angle {
+  background-image: conic-gradient(from 45deg, red, yellow, green);
+  height: 100vh;
+}
+
+/* Repeating Linear Gradient */
+.repeating-linear-gradient {
+  background-image: repeating-linear-gradient(45deg, red, yellow 10%, green 20%);
+  height: 100vh;
+}
+
+/* Repeating Radial Gradient */
+.repeating-radial-gradient {
+  background-image: repeating-radial-gradient(circle, red, yellow 20%, green 40%);
+  height: 100vh;
+}
+
+/* Multiple Gradients Combined */
+.multiple-gradients {
+  background-image: 
+      linear-gradient(to right, red, yellow), 
+      radial-gradient(circle, blue, green);
+  height: 100vh;
+}
+
+/* Transparent Gradients */
+.transparent-gradient {
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.8), rgba(255, 255, 0, 0.8));
+  height: 100vh;
+}
+
+/* Gradients with Color Stops */
+.color-stops-gradient {
+  background-image: linear-gradient(to right, red 10%, yellow 30%, green 50%, blue 100%);
+  height: 100vh;
+}

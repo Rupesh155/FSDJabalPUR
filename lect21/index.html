@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+     <style>
+        section{
+            border: 5px solid;
+            height: 700px;
+            display: grid;
+            grid-template-columns:  300px 300px 300px;
+            /* grid-template-columns:  1fr 1 fr 1fr; */
+
+            grid-template-rows: 200px 200px;
+            /* grid-auto-flow: column; */
+            /* gap: 10px; */
+
+        }
+        section div{
+   border: 4px solid green;
+        }
+        #one{
+          /* grid-column-start: 2;
+          grid-column-end: 3; */
+          grid-row-start: 3;
+          grid-row-end: 4;
+
+          background-color: red;
+
+        }
+        #four{
+          background-color: plum;
+          grid-row-start: 2;
+          grid-row-end: 3;
+
+        }
+     </style>
+
+</head>
+<body>
+    
+  <section>
+    <div id="one"> one</div>
+    <div id="two"> two</div>
+    <div id="three"> three</div>
+    <div id="four"> four</div>
+    <div id="five"> five</div>
+    <div id="six"> six</div>
+
+
+
+  </section>
+</body>
+</html>
