@@ -37,8 +37,8 @@
 // console.log(hello);
 //  d o  m 
 // console.log(document);
-  let data=    document.getElementsByClassName('two')
-  data.style.color='red'
+//   let data=    document.getElementsByClassName('two')
+//   data.style.color='red'
 // for(let i of data){
 //     i.style.color='red'
 // }
