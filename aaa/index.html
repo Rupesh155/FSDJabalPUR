@@ -3,40 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <!-- <style>
-        h2{
-            color: green;
+    <title>Moving & Rotating Sun</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: skyblue;
+            overflow: hidden;
         }
-    </style> -->
+
+        .sun {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            border-radius: 50%;
+            box-shadow: 0 0 50px rgba(255, 223, 0, 0.8);
+            position: absolute;
+            top: 30%;
+            animation: moveAndRotate 5s linear infinite;
+        }
+
+        /* Combined Animation */
+        @keyframes moveAndRotate {
+            0% {
+                transform: translateX(-200px) rotate(0deg);
+            }
+            50% {
+                transform: translateX(200px) rotate(180deg);
+            }
+            100% {
+                transform: translateX(-200px) rotate(360deg);
+            }
+        }
+    </style>
 </head>
 <body>
-   <!-- <h3 id="one" class="two"> bYEEEEE!!!!</h3>
-   <h3 class="two" id="hello"> bYEEEEE!!!!</h3>
-   <h3> bYEEEEE!!!!</h3>
-    <h2> hiii!!!!</h2> -->
-    <!-- <!-- <a  href="http://google.com"> google</a> -->
-    <a  href="https://flipkart.in"> flipkart</a> -->
-    <!-- <h1 style="color: red;"> hello</h1> -->
-
-    <div id="one">
-        <p>hellooooo</p>
-    </div>
-    <span>
-        <p>hiiii</p>
-    </span>
-    <script>
-        // const a;
-        // a=10
-        // console.log(a);
-        // console.log(undefined==null);
-        // console.log(false=='');
-        // console.log(0.1+0.2==0.3);  
-        // console.log(false==![]);
-        // console.log(false==[]);
-        // console.log([]==[]);
-   
-    </script>
+    <div class="sun"></div>
 </body>
 </html>

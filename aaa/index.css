@@ -1,28 +1,37 @@
-/* #one{
-    color: blue;
-} */
-/* .two{
-    background-color: red;
-} */
 
 
-/* a[href='http://google.com']{
-    background-color: red;
+div{
+    width:350px;
+    height: 250px;
+    border: 2px solid black;
+}
+.side-a{
+    background-color: aquamarine;
+    backface-visibility: hidden;
+    z-index: 10;
+}
+.side-b{
+    background-color: coral;
+    transform: rotateY(180deg);
+}
+body{
+    perspective: 900px;
+}
+.wrapper{
+    position: relative;
+    width:350px;
+    height: 250px;
+    transition: 2s;
+    transform-style: preserve-3d;
+    margin: 30px auto;
+}
+.side-a , .side-b{
+    position: absolute;
 }
 
-a[href^='https']{
-    background-color: black;
-} */
-a[href$='com']{
-    background-color: black;
+.wrapper:hover{
+    transform: rotateY(180deg);
 }
-
-a[href*='kart']{
-    background-color: black;
-} 
-div   p{
-    background-color: red;
+img{
+    width: 100%;
 }
-/* .one{
-    background-color: ;
-} */
