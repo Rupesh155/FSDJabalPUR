@@ -347,24 +347,20 @@
 //     </div>
 //   );
 // };
-
 // export default App;
-
-
-import React from 'react'
+import React,{useState} from 'react'
 import Todo from './Todo'
 import { Route, Routes } from 'react-router-dom'
 import Edit from './Edit'
-
 const App = () => {
+  let [todo,SetTodo]=useState([])  
+  
   return (
     <div>
-      <Routes>
-        <Route path='/'   element={  <Todo/>}/>
-        <Route path='/edit/:id'   element={  <Edit/>}/>
-
-      </Routes>
-    
+    <Routes>
+         <Route path='/'   element={<Todo todo={todo}  SetTodo={SetTodo} />}/>
+         <Route path='/edit/:id'   element={  <Edit todo={todo} SetTodo={SetTodo}/>}/>
+    </Routes>
     </div>
   )
 }
@@ -373,3 +369,6 @@ export default App
 // locahost:5733/edit/1
 
 // crud
+
+// main=> app=> todo=>
+        
