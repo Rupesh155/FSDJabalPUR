@@ -1,18 +1,21 @@
 // console.log('hello');
-
 //  let fs=  require('fs')
 //  fs.writeFileSync('index.html','helllo')
-//  fs.unlinkSync('index.html')
+//  fs.unlinkSync('index.html')    
+
+   
+
+
+
+
  let express=   require('express')
-
  let mongoose=   require('mongoose')
-
 const User = require('./models/user')
 let bcrypt=   require('bcrypt')
  let app=     express()
-
+let cors=require('cors')
  app.use(express.json())  
-
+app.use(cors())
  mongoose.connect('mongodb://127.0.0.1:27017/nirmalbaba').then(()=>{
     console.log('db....');   
  }).catch((err)=>{
@@ -37,12 +40,14 @@ let bcrypt=   require('bcrypt')
  })  
 
   
+
    app.post('/create'  , async(req,res)=>{
     let user= req.body
       let data=     await  User.findOne({email:user.email})
       if(data){
         res.send('user jinda hai !!!')
       }
+                    
       else{
              let updatedPssword=       await bcrypt.hash(user.passWord,10)
              console.log(updatedPssword,"heheh");
@@ -53,6 +58,7 @@ let bcrypt=   require('bcrypt')
             lastName:user.lastName,
             email:user.email,
             passWord:updatedPssword,
+            role:user.role||'user'
 
         })
          await  dbUser.save()
@@ -60,19 +66,17 @@ let bcrypt=   require('bcrypt')
       }
 
     }) 
-    
-    
+
+
+
     app.post('/login', async(req,res)=>{
         let loginData=req.body
-         
         console.log(loginData,"heheh");
-        
           let data=   await User.findOne({email:loginData.email})
           console.log(data,"datatta");
-          
           if(!data){
             return res.send('user not found')
-          }
+          }                          
           else{ 
                 
            let validPass=    await bcrypt.compare(loginData.passWord,data.passWord)
@@ -82,23 +86,46 @@ let bcrypt=   require('bcrypt')
            else{
             return res.send('Invalid password')
            }
-
-
-
-          }
-        
+          } 
     })
 
 
- app.get('/home',(req,res)=>{
-    res.send('home')
- })
+
+    function authorizeRole(requiredRole) {
+        return (req, res, next) => {
+            const token = req.headers.authorization
+            
+            if (!token) {
+                return res.status(401).json({ message: "Access Denied: No Token Provided" });
+            }
+    
+            try {
+                const decoded = jwt.verify(token, 'your_secret_key'); 
+                if (decoded.role !== requiredRole) {
+                    return res.status(403).json({ message: "Access Denied: Insufficient Permissions" });
+                }
+                req.user = decoded; 
+                next();
+            } catch (err) {
+                return res.status(401).json({ message: "Invalid Token" });
+            }
+        };
+    }
+    
+    app.get('/home', authorizeRole('admin'), (req, res) => {
+        res.send('Welcome to the Home Page, Admin!');
+    });
+    
+
+
 
  
  app.listen(4000,()=>{
     console.log('server running....');
     
- })
+ })  
+
+
 
 // //  Db.users.find()
 
@@ -110,6 +137,8 @@ let bcrypt=   require('bcrypt')
 //       })
 //       console.log(data,"data");
       
+// role based acces system
+
 
 
                    
